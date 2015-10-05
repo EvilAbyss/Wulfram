@@ -1,0 +1,33 @@
+How to use mbsStateMachine
+==========================
+
+When I designed this class, what I intended to have was a variable (state) that could have one of
+a number of predefined values. Depending on what that value is, a specific function would be called.
+
+At first I did this via a string but found typos were too easy to make so I adapted this class to
+use an enumeration instead.
+
+Thus, to use this class you need to do 5 things:
+1. Create an enumeration to represent your various states
+2. In Start, create your variable and define a function for each state or omit a function if you
+	want the state to do nothing.
+3. Create the functions you defined in step 2
+4. In either OnGUI or Update, call PerformAction()
+5. When you want to change to another state, call SetState
+
+The class also allows you to check the current state via CurrentState which returns the current state
+or via CompareState(someState) which returns true if the current state matches the state you queried.
+
+Example use: See mbsStateTest.cs
+
+	-- FUNCTION LIST ----------------------------------------- 
+
+	AddState(SomeState, SomeFunction = null)			Link a function to a state
+	SetState(SomeState) 								Set the current state of the variable
+	CompareState(SomeState)								Test CurrentState to see if it's the same
+	PerformAction()										Perform the selected function
+
+	-- PROPERTIES -------------------------------------------- 
+
+	CurrentState										Returns the current state of the variable
+

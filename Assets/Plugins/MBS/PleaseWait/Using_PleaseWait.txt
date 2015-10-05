@@ -1,0 +1,29 @@
+How to use PleaseWait
+==========================
+
+Please wait was created to display a rotating image in the center of the screen.
+
+It is completely automated so you can just start using it by calling PleaseWait.Draw()
+but you also have theoption of creating a prefab and dropping the PleaseWait component onto it.
+
+If you create a prefab, you an specify an image of your own choice to use as the spinner otherwise
+the component will look for an image called Spinner inside a Resources folder. If the spinner is
+not defined then the class will do nothing so make sure you either define one in a prefab or have
+an image called Spinner inside a resources folder. This is the only requirement for this code to work.
+
+When creating a prefab you can configure the class via the inspector but you also have the option of
+setting the variables via code. The fields are all optional but should you wish to set them you can
+do so via the exposed static functions meaning you can do it from anywhere in any script and don't have
+to first link to the prefab.
+
+See PleaseWaitTest.cs for a practical example.
+
+
+PleaseWait Function List
+------------------
+static public void Draw()
+
+PleaseWait Property List
+------------------
+static public Texture2D	PleaseWaitSpinner
+static public float		SpinnerSpeed

@@ -1,0 +1,90 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: SpeedLines
+  m_Shader: {fileID: 4800000, guid: 52a42b609757ab243be256552434ffea, type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 5
+  m_CustomRenderQueue: -493
+  m_SavedProperties:
+    serializedVersion: 2
+    m_TexEnvs:
+      data:
+        first:
+          name: _MainTex
+        second:
+          m_Texture: {fileID: 2800000, guid: c5ae7d6a391bf7948849795a6245528a, type: 3}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _Illum
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _Gradient
+        second:
+          m_Texture: {fileID: 2800000, guid: 5fe3389ad9006f1479d1661743a1b7f2, type: 3}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _Overlay
+        second:
+          m_Texture: {fileID: 2800000, guid: 482dc5768c5171a409cb8523eae58d79, type: 3}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+    m_Floats:
+      data:
+        first:
+          name: _InvFade
+        second: 2.87432837
+      data:
+        first:
+          name: _EmissionLM
+        second: 10
+      data:
+        first:
+          name: _Fog
+        second: 1
+      data:
+        first:
+          name: _GroundIntensity
+        second: 1
+      data:
+        first:
+          name: _scrollSpeed
+        second: 29.5900002
+      data:
+        first:
+          name: _WrapDistance
+        second: .5
+    m_Colors:
+      data:
+        first:
+          name: _Color
+        second: {r: 1, g: 1, b: 1, a: 1}
+      data:
+        first:
+          name: _GroundColor
+        second: {r: .0700000003, g: .699999988, b: .100000001, a: 1}
+      data:
+        first:
+          name: _TintColor
+        second: {r: 1, g: 1, b: 1, a: 1}
+      data:
+        first:
+          name: _ColorTop
+        second: {r: 1, g: .765517294, b: 0, a: 1}
+      data:
+        first:
+          name: _ColorBottom
+        second: {r: .477941155, g: .346095324, b: 0, a: 1}

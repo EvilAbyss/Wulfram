@@ -1,0 +1,87 @@
+v2.1.1
+- Fixed a bug that prevented spaces in the "About me" field
+
+v2.1
+- Removed WULoginProfileImage script as it's become completely redundant
+- User profile image is automatically fetched if the email is fetched during login
+- User profile image is now available under WULogin.user_gravatar if fetched or will be null otherwise
+- Moved gravatar type seection to WULogin base class
+- Added UGUI support and a new prefab to use in place of the OnGUI version (Leaving the OnGUI version as legacy)
+
+v2.03
+- Fixed a bug with the WPServer that causes issue with the WUData kit
+
+v2.02
+- Enabled custom error handling in the event of the server reporting something going wrong
+
+v2.01
+- Fixed a bug to enable Firefox support
+
+v2.0
+- This update requires that the wuss_login plugin on the website be replaced with this version
+- Introduced an extra step before you can use the login kit. In Start, call InitLoginSystem as early as possible
+- Replaced the meta data request CSV string field with a string array for simplicity
+- Extracted the server contact routines into a generic, standalone class (WPServer) to be shared by all other WUSS kits
+- Removed the functions that trigger the delegate actions and call them from the new WPServer class directly
+- Also removed the website URL and online/offline checks from WULogin to WPServer.
+- The WULogin prefab is updated to hold the WUServer component by default but WUServer can be placed on another object if desired
+- Calling the server now requires a lot more params due to it's generic nature. All functions updated to include them for you
+- Delegate functions now receive server responses as "CML" objects, not as the generic "object" class
+	- This saves you the initial explicit casting before you can use it
+	- but also means you need to fetch the data from within the response using response[0] or response.GetFirstNodeOfType(LOGINConstant) as appropriate
+	- You now also get access to the entire server response, including error messages and debug info, if any
+- Added two new constants: login_filepath and LOGINConstant.
+- Login_filepath is for internal use only. LOGINConstant matches the return type from the server
+- Added a WULActions enum that I use to call the server, instead of using the WULStates enum used for the GUI state machine
+- WPServer now sends actions as strings instead of ints
+- Sorted the compatibility issue that prevented the kit from working on PS Vita and Firefox browser
+	- It should now work with everything! Testing continues
+- Moved ShowPleaseWait function into WPServer so all kits can fetch it from there instead of creating duplicate code
+
+On the server
+- Updated the Wordpress plugin to make the login kit's code more easily readable in existing and future add-on components
+- Removed the pre- and post- functions as they didn't serve any real purpose. If you need it back, please let me know.
+- Now uses AJAX functions to trigger the code when appropriate instead of forcing the code to run during the SHUTDOWN action
+- AJAX functions also add an extra level of protection against calling code while not logged in
+- Renamed the functions in a paranoia driven attempt at website hacking prevention
+- Force function name prefixes to prevent my code from being used as an exploit to run arbitrary code on your site
+
+v1.3
+- This update requires that the WUPlugin on the website be replaced with this version
+- WULogin prefab now allows you to specify what fields to return upon login and also allows you to fetch any piece of info from the usermeta table. 
+- All the info returned during login is stored in a publicly accessible cmlData variable called fetched_info
+- logged_in variable is now set automatically upon login and logout. You no longer need to do this manually in the GUI script
+- WULogin now contains a Static WULogin.GameID field that other kits can use to make sure all WU kits use the same game ID
+- WUServer now contains a public function to generate the WWW request. All other WU kits will use this function to contact the server
+- WUServer has been updated to fix some login issues on iOS
+- Fixed the bug where logging in without first logging out caused the previous login's cookie to be used
+- You are now able to test web player projects in the editor
+- Updated WULProfileImage to only fetch personal info if the email was not requested during login, thereby saving one extra round trip to the server
+- Now adds a WUL define to the project
+
+v1.22
+- Modified the method for fetching your gravatar image. You can use it as always or you can now pass in the type of image of
+gravatar you want to show. Simply use the new WULGravatarTypes enum as the second param.
+- Updated the WULProfileImage script so you can select your gravatar type from the inspector
+- Added the WUServer_Instance property to WUServer in preparation for dependent kit updates
+
+v1.21
+- Modified the WUCookie script to remove the deprecated warning introduced in Unity 4.5 and thus made it more future proof
+
+v1.2
+- Added multisite installation support
+- Added wulogin_pre and wulogin_post hooks for custom plugins
+- Moved execution from immediately to Wordpress's 'shutdown' filter for improved compatability with 3rd party plugins on your website
+NOTE: This update will break a previous install if installed on a multisite
+
+v1.11
+- Fixed a security issue introduced in v1.1
+- Modified this file so the upload would work...
+
+v1.1
+- Now includes a new class WULProfileImg. 
+- After login, player's preofile image will be available from static WULProfileImg.ProfileImage
+- Updated the Wordpress plugin to fix a strange bug that occurs in the WUData package
+
+v1.0
+- Initial release

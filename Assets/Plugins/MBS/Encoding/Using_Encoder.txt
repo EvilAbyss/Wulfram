@@ -1,0 +1,21 @@
+How to use Encoder
+==========================
+
+The encoder class is entirely static and cannot be simpler to use.
+
+At any point in any script, if you want to encode a string using MD5 simply call
+	Encoder.MD5
+	
+Remember, though, strings encoded with MD5 cannot be decoded again!
+
+To encode strings using Base64 or to decode them back again, simply use
+	Encoder.Base64Encode 
+or	Encoder.Baser64Decoder respectively.
+
+That is all there is to it...
+
+CML Function List
+-----------------
+static public string MD5 (string str)
+static public string Base64Encode(string source) {
+static public string Base64Decode(string source) {

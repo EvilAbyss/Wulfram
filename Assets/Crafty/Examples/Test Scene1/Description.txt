@@ -1,0 +1,1 @@
+This scene was created only to test the basic functions of Crafty.

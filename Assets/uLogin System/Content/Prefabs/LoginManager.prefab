@@ -1,0 +1,99 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &100000
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 400000}
+  - 114: {fileID: 11400000}
+  - 114: {fileID: 11400002}
+  - 114: {fileID: 11400004}
+  m_Layer: 0
+  m_Name: LoginManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &400000
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 356.769531, y: 177.513672, z: 1.59375}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f416866caf14c745a9281aa5dd58716, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  LoginPHP_URL: 687474703a2f2f7777772e77756c6672616d2e6f72672f754c6f67696e2f626c5f4c6f67696e2e706870
+  NextLevel: 52616e6b696e67
+  m_User: 
+  m_Password: 
+  KeepMe: 0
+  mToggle: {fileID: 0}
+  m_UserInput: {fileID: 0}
+  m_PassInput: {fileID: 0}
+--- !u!114 &11400002
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3af9a8268d14383449c74b660f509a43, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SecretKey: 313233343536
+  RegisterPHP_Url: 687474703a2f2f7777772e77756c6672616d2e6f72672f754c6f67696e2f626c5f52656769737465722e706870
+  UserInput: {fileID: 0}
+  PasswordInput: {fileID: 0}
+  Re_PasswordInput: {fileID: 0}
+  MaxNameLenght: 15
+--- !u!114 &11400004
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c651eb2c4d22950478503a1a26a7497c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PlayerInfo: {fileID: 100000, guid: 6c3779185d3a5664cb03b55031c81bd0, type: 2}
+  LoginAnim: {fileID: 0}
+  RegisterAnim: {fileID: 0}
+  InfoAnim: {fileID: 0}
+  GetIpOnAwake: 1
+  DetectBan: 1
+  Description: {fileID: 0}
+  BlackScreen: {fileID: 0}
+  Loading: {fileID: 0}
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 100000}
+  m_IsPrefabParent: 1

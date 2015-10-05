@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: edb8dea92f0664f7ebdba06b4f2697da
+labels:
+- Photon
+- Multiplayer
+- Demo
+- ExitGames
+- BootCamp
+- Networking
+- MMO
+- FPS
+- Server
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 

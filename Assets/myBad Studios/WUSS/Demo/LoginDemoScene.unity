@@ -1,0 +1,946 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!29 &1
+SceneSettings:
+  m_ObjectHideFlags: 0
+  m_PVSData: 
+  m_PVSObjectsArray: []
+  m_PVSPortalsArray: []
+  m_OcclusionBakeSettings:
+    smallestOccluder: 5
+    smallestHole: .25
+    backfaceThreshold: 100
+--- !u!104 &2
+RenderSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 6
+  m_Fog: 0
+  m_FogColor: {r: .5, g: .5, b: .5, a: 1}
+  m_FogMode: 3
+  m_FogDensity: .00999999978
+  m_LinearFogStart: 0
+  m_LinearFogEnd: 300
+  m_AmbientSkyColor: {r: .200000003, g: .200000003, b: .200000003, a: 1}
+  m_AmbientEquatorColor: {r: .200000003, g: .200000003, b: .200000003, a: 1}
+  m_AmbientGroundColor: {r: .200000003, g: .200000003, b: .200000003, a: 1}
+  m_AmbientIntensity: 1
+  m_AmbientMode: 3
+  m_SkyboxMaterial: {fileID: 0}
+  m_HaloStrength: .5
+  m_FlareStrength: 1
+  m_FlareFadeSpeed: 3
+  m_HaloTexture: {fileID: 0}
+  m_SpotCookie: {fileID: 10001, guid: 0000000000000000e000000000000000, type: 0}
+  m_DefaultReflectionMode: 0
+  m_DefaultReflectionResolution: 128
+  m_ReflectionBounces: 1
+  m_ReflectionIntensity: 1
+  m_CustomReflection: {fileID: 0}
+  m_Sun: {fileID: 0}
+--- !u!127 &3
+LevelGameManager:
+  m_ObjectHideFlags: 0
+--- !u!157 &4
+LightmapSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 5
+  m_GIWorkflowMode: 1
+  m_LightmapsMode: 1
+  m_GISettings:
+    serializedVersion: 2
+    m_BounceScale: 1
+    m_IndirectOutputScale: 1
+    m_AlbedoBoost: 1
+    m_TemporalCoherenceThreshold: 1
+    m_EnvironmentLightingMode: 0
+    m_EnableBakedLightmaps: 1
+    m_EnableRealtimeLightmaps: 0
+  m_LightmapEditorSettings:
+    serializedVersion: 3
+    m_Resolution: 1
+    m_BakeResolution: 50
+    m_TextureWidth: 1024
+    m_TextureHeight: 1024
+    m_AOMaxDistance: 1
+    m_Padding: 2
+    m_CompAOExponent: 0
+    m_LightmapParameters: {fileID: 0}
+    m_TextureCompression: 0
+    m_FinalGather: 0
+    m_FinalGatherRayCount: 1024
+  m_LightmapSnapshot: {fileID: 0}
+  m_RuntimeCPUUsage: 25
+--- !u!196 &5
+NavMeshSettings:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_BuildSettings:
+    serializedVersion: 2
+    agentRadius: .5
+    agentHeight: 2
+    agentSlope: 45
+    agentClimb: .400000006
+    ledgeDropHeight: 0
+    maxJumpAcrossDistance: 0
+    accuratePlacement: 0
+    minRegionArea: 2
+    cellSize: .166666657
+    manualCellSize: 0
+  m_NavMeshData: {fileID: 0}
+--- !u!1001 &32752465
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 11400000, guid: be223b0d8d4de4967a388a749f14a6f8, type: 2}
+      propertyPath: fetch_meta_info.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: be223b0d8d4de4967a388a749f14a6f8, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: be223b0d8d4de4967a388a749f14a6f8, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: be223b0d8d4de4967a388a749f14a6f8, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: be223b0d8d4de4967a388a749f14a6f8, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: be223b0d8d4de4967a388a749f14a6f8, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: be223b0d8d4de4967a388a749f14a6f8, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: be223b0d8d4de4967a388a749f14a6f8, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: be223b0d8d4de4967a388a749f14a6f8, type: 2}
+      propertyPath: fetch_account_id
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: be223b0d8d4de4967a388a749f14a6f8, type: 2}
+      propertyPath: fetch_username
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: be223b0d8d4de4967a388a749f14a6f8, type: 2}
+      propertyPath: fetch_meta_info.Array.data[0]
+      value: nickname
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: be223b0d8d4de4967a388a749f14a6f8, type: 2}
+      propertyPath: fetch_email
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: be223b0d8d4de4967a388a749f14a6f8, type: 2}
+      propertyPath: gravatar_type
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: be223b0d8d4de4967a388a749f14a6f8, type: 2}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 11465986, guid: be223b0d8d4de4967a388a749f14a6f8, type: 2}
+      propertyPath: online_url
+      value: http://www.wulf.dreamhosters.com
+      objectReference: {fileID: 0}
+    - target: {fileID: 11465986, guid: be223b0d8d4de4967a388a749f14a6f8, type: 2}
+      propertyPath: online
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: be223b0d8d4de4967a388a749f14a6f8, type: 2}
+      propertyPath: fetch_url
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: be223b0d8d4de4967a388a749f14a6f8, type: 2}
+      propertyPath: fetch_registration
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: be223b0d8d4de4967a388a749f14a6f8, type: 2}
+      propertyPath: fetch_roles
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11465986, guid: be223b0d8d4de4967a388a749f14a6f8, type: 2}
+      propertyPath: print_response_headers
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 0}
+  m_ParentPrefab: {fileID: 100100000, guid: be223b0d8d4de4967a388a749f14a6f8, type: 2}
+  m_RootGameObject: {fileID: 1392481183}
+  m_IsPrefabParent: 0
+--- !u!1 &1189597346
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100000, guid: 7c1e8789b32194b94874544ef7651a09, type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1189597348}
+  - 114: {fileID: 1189597347}
+  m_Layer: 0
+  m_Name: PostLogin
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1189597347
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: 7c1e8789b32194b94874544ef7651a09,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1189597346}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0193ba57968f245bcaefa9b6685b1b44, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &1189597348
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400000, guid: 7c1e8789b32194b94874544ef7651a09, type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1189597346}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 3
+--- !u!1 &1392481183
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100000, guid: be223b0d8d4de4967a388a749f14a6f8, type: 2}
+  m_PrefabInternal: {fileID: 32752465}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1392481186}
+  - 114: {fileID: 1392481185}
+  - 114: {fileID: 1392481184}
+  m_Layer: 0
+  m_Name: WULogin
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1392481184
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: be223b0d8d4de4967a388a749f14a6f8,
+    type: 2}
+  m_PrefabInternal: {fileID: 32752465}
+  m_GameObject: {fileID: 1392481183}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 657f641c385e44c62b3a042e068a3fee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fetch_account_id: 0
+  fetch_username: 1
+  fetch_display_name: 1
+  fetch_email: 0
+  fetch_url: 1
+  fetch_registration: 0
+  fetch_roles: 0
+  gravatar_type: 4
+  fetch_meta_info:
+  - nickname
+  the_skin: {fileID: 11400000, guid: 5672476ce0fea45048f7eda36263be8d, type: 2}
+  displayArea:
+    targetPos:
+      serializedVersion: 2
+      x: 280
+      y: 0
+      width: 400
+      height: 300
+    Fade: 1
+    Slide: 1
+    slideInDirection: 1
+    slideOutDirection: 0
+    slideSpeed: 800
+  account_info:
+    pages:
+    - tabname: Names
+      buttons:
+      - Cancel
+      - Update
+      Entries:
+      - label: Real name
+        serverfield: fname
+        value: 
+        fieldType: 0
+        verify: 0
+        passwordChar: 
+        length: 32
+        label_area:
+          serializedVersion: 2
+          x: 50
+          y: 30
+          width: 100
+          height: 26
+        value_area:
+          serializedVersion: 2
+          x: 150
+          y: 30
+          width: 200
+          height: 26
+      - label: Family name
+        serverfield: lname
+        value: 
+        fieldType: 0
+        verify: 0
+        passwordChar: 
+        length: 32
+        label_area:
+          serializedVersion: 2
+          x: 50
+          y: 60
+          width: 100
+          height: 26
+        value_area:
+          serializedVersion: 2
+          x: 150
+          y: 60
+          width: 200
+          height: 26
+      - label: Nickname
+        serverfield: nname
+        value: 
+        fieldType: 1
+        verify: 0
+        passwordChar: 
+        length: 32
+        label_area:
+          serializedVersion: 2
+          x: 50
+          y: 90
+          width: 100
+          height: 26
+        value_area:
+          serializedVersion: 2
+          x: 150
+          y: 90
+          width: 200
+          height: 26
+      - label: Display name
+        serverfield: dname
+        value: 
+        fieldType: 1
+        verify: 0
+        passwordChar: 
+        length: 32
+        label_area:
+          serializedVersion: 2
+          x: 50
+          y: 120
+          width: 100
+          height: 26
+        value_area:
+          serializedVersion: 2
+          x: 150
+          y: 120
+          width: 200
+          height: 26
+      horizontal_button_layout: 1
+      buttons_area:
+        serializedVersion: 2
+        x: 40
+        y: 160
+        width: 320
+        height: 46
+    - tabname: IM
+      buttons:
+      - Cancel
+      - Update
+      Entries:
+      - label: Jabber
+        serverfield: jabber
+        value: 
+        fieldType: 0
+        verify: 0
+        passwordChar: 
+        length: 32
+        label_area:
+          serializedVersion: 2
+          x: 50
+          y: 30
+          width: 100
+          height: 26
+        value_area:
+          serializedVersion: 2
+          x: 150
+          y: 30
+          width: 200
+          height: 26
+      - label: AIM
+        serverfield: aim
+        value: 
+        fieldType: 0
+        verify: 0
+        passwordChar: 
+        length: 32
+        label_area:
+          serializedVersion: 2
+          x: 50
+          y: 60
+          width: 100
+          height: 26
+        value_area:
+          serializedVersion: 2
+          x: 150
+          y: 60
+          width: 200
+          height: 26
+      - label: Yim
+        serverfield: yim
+        value: 
+        fieldType: 0
+        verify: 0
+        passwordChar: 
+        length: 32
+        label_area:
+          serializedVersion: 2
+          x: 50
+          y: 90
+          width: 100
+          height: 26
+        value_area:
+          serializedVersion: 2
+          x: 150
+          y: 90
+          width: 200
+          height: 26
+      horizontal_button_layout: 1
+      buttons_area:
+        serializedVersion: 2
+        x: 40
+        y: 160
+        width: 320
+        height: 46
+    - tabname: Misc
+      buttons:
+      - Cancel
+      - Update
+      Entries:
+      - label: Email
+        serverfield: email
+        value: 
+        fieldType: 3
+        verify: 0
+        passwordChar: 
+        length: 96
+        label_area:
+          serializedVersion: 2
+          x: 50
+          y: 30
+          width: 100
+          height: 26
+        value_area:
+          serializedVersion: 2
+          x: 150
+          y: 30
+          width: 200
+          height: 26
+      - label: Website
+        serverfield: website
+        value: 
+        fieldType: 0
+        verify: 0
+        passwordChar: 
+        length: 128
+        label_area:
+          serializedVersion: 2
+          x: 50
+          y: 60
+          width: 100
+          height: 26
+        value_area:
+          serializedVersion: 2
+          x: 150
+          y: 60
+          width: 200
+          height: 26
+      - label: About me
+        serverfield: descr
+        value: 
+        fieldType: 0
+        verify: 0
+        passwordChar: 
+        length: 256
+        label_area:
+          serializedVersion: 2
+          x: 50
+          y: 90
+          width: 100
+          height: 26
+        value_area:
+          serializedVersion: 2
+          x: 150
+          y: 90
+          width: 200
+          height: 26
+      horizontal_button_layout: 1
+      buttons_area:
+        serializedVersion: 2
+        x: 40
+        y: 160
+        width: 320
+        height: 46
+    active_page: 0
+    view_area:
+      serializedVersion: 2
+      x: 5
+      y: 60
+      width: 390
+      height: 260
+    tabs_area:
+      serializedVersion: 2
+      x: 50
+      y: 40
+      width: 300
+      height: 36
+  login_challenge:
+    tabname: Login
+    buttons:
+    - Cancel
+    - Login
+    Entries:
+    - label: Username
+      serverfield: username
+      value: 
+      fieldType: 1
+      verify: 0
+      passwordChar: 
+      length: 32
+      label_area:
+        serializedVersion: 2
+        x: 50
+        y: 80
+        width: 100
+        height: 26
+      value_area:
+        serializedVersion: 2
+        x: 150
+        y: 80
+        width: 200
+        height: 26
+    - label: Password
+      serverfield: password
+      value: 
+      fieldType: 1
+      verify: 0
+      passwordChar: '*'
+      length: 32
+      label_area:
+        serializedVersion: 2
+        x: 50
+        y: 120
+        width: 100
+        height: 26
+      value_area:
+        serializedVersion: 2
+        x: 150
+        y: 120
+        width: 200
+        height: 26
+    horizontal_button_layout: 1
+    buttons_area:
+      serializedVersion: 2
+      x: 40
+      y: 200
+      width: 320
+      height: 46
+  registration_challenge:
+    tabname: Registration
+    buttons:
+    - Cancel
+    - Register
+    Entries:
+    - label: Username
+      serverfield: username
+      value: 
+      fieldType: 1
+      verify: 0
+      passwordChar: 
+      length: 32
+      label_area:
+        serializedVersion: 2
+        x: 50
+        y: 40
+        width: 100
+        height: 26
+      value_area:
+        serializedVersion: 2
+        x: 150
+        y: 40
+        width: 200
+        height: 26
+    - label: Password
+      serverfield: password
+      value: 
+      fieldType: 1
+      verify: 0
+      passwordChar: '*'
+      length: 32
+      label_area:
+        serializedVersion: 2
+        x: 50
+        y: 80
+        width: 100
+        height: 26
+      value_area:
+        serializedVersion: 2
+        x: 150
+        y: 80
+        width: 200
+        height: 26
+    - label: Verify
+      serverfield: 
+      value: 
+      fieldType: 4
+      verify: 1
+      passwordChar: '*'
+      length: 32
+      label_area:
+        serializedVersion: 2
+        x: 50
+        y: 120
+        width: 100
+        height: 26
+      value_area:
+        serializedVersion: 2
+        x: 150
+        y: 120
+        width: 200
+        height: 26
+    - label: Email
+      serverfield: email
+      value: 
+      fieldType: 3
+      verify: 1
+      passwordChar: 
+      length: 96
+      label_area:
+        serializedVersion: 2
+        x: 50
+        y: 160
+        width: 100
+        height: 26
+      value_area:
+        serializedVersion: 2
+        x: 150
+        y: 160
+        width: 200
+        height: 26
+    horizontal_button_layout: 1
+    buttons_area:
+      serializedVersion: 2
+      x: 40
+      y: 200
+      width: 320
+      height: 46
+  pass_reset_challenge:
+    tabname: 
+    buttons:
+    - Cancel
+    - Reset
+    Entries:
+    - label: Username
+      serverfield: login
+      value: 
+      fieldType: 0
+      verify: 0
+      passwordChar: 
+      length: 32
+      label_area:
+        serializedVersion: 2
+        x: 50
+        y: 90
+        width: 100
+        height: 26
+      value_area:
+        serializedVersion: 2
+        x: 150
+        y: 90
+        width: 200
+        height: 26
+    - label: or Email
+      serverfield: login
+      value: 
+      fieldType: 2
+      verify: 0
+      passwordChar: 
+      length: 96
+      label_area:
+        serializedVersion: 2
+        x: 50
+        y: 120
+        width: 100
+        height: 26
+      value_area:
+        serializedVersion: 2
+        x: 150
+        y: 120
+        width: 200
+        height: 26
+    horizontal_button_layout: 1
+    buttons_area:
+      serializedVersion: 2
+      x: 40
+      y: 160
+      width: 320
+      height: 46
+  password_change_challenge:
+    tabname: Password Change
+    buttons:
+    - Cancel
+    - Continue
+    Entries:
+    - label: Old Password
+      serverfield: password
+      value: 
+      fieldType: 1
+      verify: 0
+      passwordChar: '*'
+      length: 32
+      label_area:
+        serializedVersion: 2
+        x: 50
+        y: 90
+        width: 100
+        height: 26
+      value_area:
+        serializedVersion: 2
+        x: 150
+        y: 90
+        width: 200
+        height: 26
+    - label: New Password
+      serverfield: passnew
+      value: 
+      fieldType: 1
+      verify: 0
+      passwordChar: '*'
+      length: 32
+      label_area:
+        serializedVersion: 2
+        x: 50
+        y: 120
+        width: 100
+        height: 26
+      value_area:
+        serializedVersion: 2
+        x: 150
+        y: 120
+        width: 200
+        height: 26
+    - label: Verify
+      serverfield: 
+      value: 
+      fieldType: 4
+      verify: 1
+      passwordChar: '*'
+      length: 32
+      label_area:
+        serializedVersion: 2
+        x: 50
+        y: 150
+        width: 100
+        height: 26
+      value_area:
+        serializedVersion: 2
+        x: 150
+        y: 150
+        width: 200
+        height: 26
+    horizontal_button_layout: 1
+    buttons_area:
+      serializedVersion: 2
+      x: 40
+      y: 200
+      width: 320
+      height: 46
+  destroy_prefab_on_login: 0
+  attempt_auto_login: 1
+  destroy_on_scene_change: 0
+  fix_resolution: 1
+  fixed_screen_width: 960
+  fixed_screen_height: 640
+  watermark: {fileID: 2800000, guid: c7dc0be6d17a1491f8fc1e2f9f7062cb, type: 3}
+  remember_me_area:
+    serializedVersion: 2
+    x: 220
+    y: 160
+    width: 150
+    height: 30
+  watermark_area:
+    serializedVersion: 2
+    x: 13
+    y: 13
+    width: 374
+    height: 274
+--- !u!114 &1392481185
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11465986, guid: be223b0d8d4de4967a388a749f14a6f8,
+    type: 2}
+  m_PrefabInternal: {fileID: 32752465}
+  m_GameObject: {fileID: 1392481183}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa9154c89ea43490ba3731f649b85f2e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  online_url: http://www.wulf.dreamhosters.com
+  offline_url: http://localhost
+  game_id: 1
+  online: 1
+  print_response_headers: 1
+--- !u!4 &1392481186
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400000, guid: be223b0d8d4de4967a388a749f14a6f8, type: 2}
+  m_PrefabInternal: {fileID: 32752465}
+  m_GameObject: {fileID: 1392481183}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 2
+--- !u!1 &1976531295
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1976531301}
+  - 20: {fileID: 1976531300}
+  - 92: {fileID: 1976531299}
+  - 124: {fileID: 1976531298}
+  - 81: {fileID: 1976531297}
+  m_Layer: 0
+  m_Name: Main Camera
+  m_TagString: MainCamera
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!81 &1976531297
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1976531295}
+  m_Enabled: 1
+--- !u!124 &1976531298
+Behaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1976531295}
+  m_Enabled: 1
+--- !u!92 &1976531299
+Behaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1976531295}
+  m_Enabled: 1
+--- !u!20 &1976531300
+Camera:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1976531295}
+  m_Enabled: 1
+  serializedVersion: 2
+  m_ClearFlags: 1
+  m_BackGroundColor: {r: .192156866, g: .301960796, b: .474509805, a: .0196078438}
+  m_NormalizedViewPortRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+  near clip plane: .300000012
+  far clip plane: 1000
+  field of view: 60
+  orthographic: 0
+  orthographic size: 5
+  m_Depth: -1
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RenderingPath: -1
+  m_TargetTexture: {fileID: 0}
+  m_TargetDisplay: 0
+  m_HDR: 0
+  m_OcclusionCulling: 1
+  m_StereoConvergence: 10
+  m_StereoSeparation: .0219999999
+--- !u!4 &1976531301
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1976531295}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 1, z: -10}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+--- !u!1 &2068691969
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 2068691971}
+  - 114: {fileID: 2068691970}
+  m_Layer: 0
+  m_Name: MyGameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2068691970
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2068691969}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fcced351c5cb0423c8130eef1af7bf98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &2068691971
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2068691969}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 1

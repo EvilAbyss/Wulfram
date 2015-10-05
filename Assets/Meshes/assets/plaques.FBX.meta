@@ -1,0 +1,226 @@
+fileFormatVersion: 2
+guid: 15b41a6e8288e094db83bf8197a6d78c
+ModelImporter:
+  serializedVersion: 16
+  fileIDToRecycleName:
+    100000: concret
+    100002: concret 1
+    100004: dirt
+    100006: gate
+    100008: gate_block
+    100010: grid
+    100012: house_new
+    100014: lookout_post
+    100016: metal
+    100018: metal 1
+    100020: metal 10
+    100022: metal 11
+    100024: metal 12
+    100026: metal 13
+    100028: metal 14
+    100030: metal 15
+    100032: metal 16
+    100034: metal 2
+    100036: metal 3
+    100038: metal 4
+    100040: metal 5
+    100042: metal 6
+    100044: metal 7
+    100046: metal 8
+    100048: metal 9
+    100050: metal01
+    100052: Object01
+    100054: Object02
+    100056: plaque-a
+    100058: plaque-a01
+    100060: plaque-b
+    100062: plaque-c
+    100064: plaque-d
+    100066: plaque-e
+    100068: plaque-f
+    100070: plaque-g
+    100072: plaque-h
+    100074: plaque-i
+    100076: plaque-j
+    100078: plaque-l
+    100080: plaque-m
+    100082: //RootNode
+    100084: post_card
+    100086: Rectangle04
+    100088: wood
+    100090: wood 1
+    400000: concret
+    400002: concret 1
+    400004: dirt
+    400006: gate
+    400008: gate_block
+    400010: grid
+    400012: house_new
+    400014: lookout_post
+    400016: metal
+    400018: metal 1
+    400020: metal 10
+    400022: metal 11
+    400024: metal 12
+    400026: metal 13
+    400028: metal 14
+    400030: metal 15
+    400032: metal 16
+    400034: metal 2
+    400036: metal 3
+    400038: metal 4
+    400040: metal 5
+    400042: metal 6
+    400044: metal 7
+    400046: metal 8
+    400048: metal 9
+    400050: metal01
+    400052: Object01
+    400054: Object02
+    400056: plaque-a
+    400058: plaque-a01
+    400060: plaque-b
+    400062: plaque-c
+    400064: plaque-d
+    400066: plaque-e
+    400068: plaque-f
+    400070: plaque-g
+    400072: plaque-h
+    400074: plaque-i
+    400076: plaque-j
+    400078: plaque-l
+    400080: plaque-m
+    400082: //RootNode
+    400084: post_card
+    400086: Rectangle04
+    400088: wood
+    400090: wood 1
+    2300000: concret
+    2300002: concret 1
+    2300004: dirt
+    2300006: metal
+    2300008: metal 1
+    2300010: metal 10
+    2300012: metal 11
+    2300014: metal 12
+    2300016: metal 13
+    2300018: metal 14
+    2300020: metal 15
+    2300022: metal 16
+    2300024: metal 2
+    2300026: metal 3
+    2300028: metal 4
+    2300030: metal 5
+    2300032: metal 6
+    2300034: metal 7
+    2300036: metal 8
+    2300038: metal 9
+    2300040: metal01
+    2300042: Object01
+    2300044: Object02
+    2300046: wood
+    2300048: wood 1
+    3300000: concret
+    3300002: concret 1
+    3300004: dirt
+    3300006: metal
+    3300008: metal 1
+    3300010: metal 10
+    3300012: metal 11
+    3300014: metal 12
+    3300016: metal 13
+    3300018: metal 14
+    3300020: metal 15
+    3300022: metal 16
+    3300024: metal 2
+    3300026: metal 3
+    3300028: metal 4
+    3300030: metal 5
+    3300032: metal 6
+    3300034: metal 7
+    3300036: metal 8
+    3300038: metal 9
+    3300040: metal01
+    3300042: Object01
+    3300044: Object02
+    3300046: wood
+    3300048: wood 1
+    4300000: concret
+    4300002: metal
+    4300004: metal
+    4300006: metal
+    4300008: metal
+    4300010: metal
+    4300012: metal
+    4300014: metal
+    4300016: metal
+    4300018: metal
+    4300020: metal
+    4300022: metal
+    4300024: metal
+    4300026: wood
+    4300028: wood
+    4300030: metal
+    4300032: metal
+    4300034: concret
+    4300036: metal
+    4300038: metal
+    4300040: dirt
+    4300042: metal
+    4300044: Object02
+    4300046: Object01
+    4300048: metal01
+    11100000: //RootNode
+  materials:
+    importMaterials: 0
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: .00999999978
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 1
+  additionalBone: 0
+  userData: 

@@ -1,0 +1,159 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: waterfall
+  m_Shader: {fileID: 4800000, guid: bc7547f54358da84ab4cc4c1af36b0d1, type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 5
+  m_CustomRenderQueue: -1
+  m_SavedProperties:
+    serializedVersion: 2
+    m_TexEnvs:
+      data:
+        first:
+          name: _MainTex
+        second:
+          m_Texture: {fileID: 2800000, guid: 9613277e20d37f74d9b8eb7deaf69413, type: 3}
+          m_Scale: {x: 1, y: 2}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _BumpMap
+        second:
+          m_Texture: {fileID: 2800000, guid: 8c89a36f6988835449eb5e7d63b80e55, type: 3}
+          m_Scale: {x: 2, y: 2}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _Cube
+        second:
+          m_Texture: {fileID: 8900000, guid: 8bf333b73a1e22b46b342c6570d08667, type: 3}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _FoamTex
+        second:
+          m_Texture: {fileID: 2800000, guid: 0ecb8fcaeda4c8646836686a9ea45d1e, type: 3}
+          m_Scale: {x: 2, y: 5}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _CubeTex
+        second:
+          m_Texture: {fileID: 8900000, guid: 8bf333b73a1e22b46b342c6570d08667, type: 3}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _HeightTex
+        second:
+          m_Texture: {fileID: 2800000, guid: cf8640e78838c06429f4a9a339834963, type: 3}
+          m_Scale: {x: 2, y: 2}
+          m_Offset: {x: 0, y: 0}
+    m_Floats:
+      data:
+        first:
+          name: _Shininess
+        second: 60
+      data:
+        first:
+          name: _Displacement
+        second: .0590565801
+      data:
+        first:
+          name: _InvFade
+        second: .626415193
+      data:
+        first:
+          name: _ChromaticDispersion
+        second: .679245293
+      data:
+        first:
+          name: _Refraction
+        second: 75.4716949
+      data:
+        first:
+          name: _ReflToRefrExponent
+        second: 2
+      data:
+        first:
+          name: _BumpReflectionStr
+        second: .735849023
+      data:
+        first:
+          name: _FresnelPower
+        second: 10
+      data:
+        first:
+          name: _ShoreFactor
+        second: .822641492
+      data:
+        first:
+          name: _ShoreFadeFactor
+        second: .85943383
+      data:
+        first:
+          name: _Refractivity
+        second: 100
+      data:
+        first:
+          name: _DisplacementTiling
+        second: 1.57169807
+      data:
+        first:
+          name: _InvFadeFoam
+        second: .719811201
+      data:
+        first:
+          name: _InvFadeDisplacement
+        second: .516981125
+      data:
+        first:
+          name: _Ambient
+        second: 1
+      data:
+        first:
+          name: _Reflectivity
+        second: 1
+      data:
+        first:
+          name: _ColorTextureOverlay
+        second: .452830136
+      data:
+        first:
+          name: _Speed
+        second: .339622647
+    m_Colors:
+      data:
+        first:
+          name: _Color
+        second: {r: .813432813, g: .898236096, b: 1, a: 1}
+      data:
+        first:
+          name: _SpecColor
+        second: {r: .313725501, g: .305882365, b: .294117659, a: 1}
+      data:
+        first:
+          name: _TintColor
+        second: {r: 1, g: .979334116, b: .932835817, a: 1}
+      data:
+        first:
+          name: _Emission
+        second: {r: 0, g: 0, b: 0, a: 0}
+      data:
+        first:
+          name: _ReflectColor
+        second: {r: 1, g: 1, b: 1, a: 1}
+      data:
+        first:
+          name: _WorldLightDir
+        second: {r: .563224852, g: .596521318, b: .57178694, a: 0}
+--- !u!1002 &2100001
+EditorExtensionImpl:
+  serializedVersion: 6

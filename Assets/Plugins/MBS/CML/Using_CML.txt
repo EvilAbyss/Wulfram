@@ -1,0 +1,88 @@
+How to use CML
+==========================
+
+CML is a custom data storage and retrieval system.
+To best describe it, think of it is as XML, only easier.
+
+With that being said, showing you how to use it is quite the difficult task
+as the uses are virtually limitless.
+
+What I can say is to look at the function list for what functions are
+available to you and just play around with it.
+
+Following is a very brief overview of how CML works:
+The CML class basically has an array of cmlData and contains functions to add
+and remove new nodes as well as functions to position a marker within the list.
+This marker can be useful at times but one of the things that make CML so nice
+is the fact that you can access any node directly without having to use any
+positional markers. All you need is the id of the node you want and presto...
+
+To that end, CML internally manages unique ID values for each node and contains
+a great many functions to find these nodes and return either the data of these
+selected nodes or only the ID values thereof. Child nodes, both recursive and
+top level only... first nodes, last nodes, globally or by type... Heck, you can
+even find nodes based on what fields they contain or even by what the value is
+of any specific field in the node...
+
+CML also contains a built in save and load system that utilises PlayerPrefs,
+Resources folders and file paths.
+
+And finally, CML also allows you to generate variables dynamically at runtime
+and use them as typed variables. CML is even smart enough to provide default
+values for when you use a variable that doesn't exist thereby preventing runtime
+errors and allowing you to save less data to disc.
+
+Please see CML.cs for details on how to create CML scripts.
+
+
+CML Function List
+-----------------
+public void Initialize() 
+public cmlData First
+public cmlData Last 
+public bool LoadFile(string filename) 
+public bool OpenFile(string FileName)
+public bool ParseFile(string data) 
+public bool Load(string PrefName)
+public bool Save(string PrefName)
+public bool SaveFile(string FileName)
+
+public string ToString(bool include_id = true)
+    
+public void ImbedCMLData() 
+public bool Join(CML other)
+
+public bool AddNode(string data_type, string add_data = "") 
+public bool InsertNode(string data_type, string add_data = "") 
+public bool InsertNode(int index, string data_type, string add_data="") 
+public bool RemoveNode(int index) 
+public bool RemoveCurrentNode() 
+
+public bool PositionAtNode(int index) 
+public bool PositionAtFirstNode() 
+public bool PositionAtLastNode() 
+public bool PositionAtNextNode()
+public bool PositionAtPreviousNode() 
+public bool PositionAtFirstNodeOfType(string data_type) 
+public bool ContainsANodeOfType(string data_type) 
+
+public cmlData GetFirstNodeOfType(string data_type) 
+public int GetFirstNodeOfTypei(string data_type) 
+public cmlData GetLastNodeOfType(string data_type) 
+public int GetLastNodeOfTypei(string data_type) 
+
+public List<cmlData> DataWithField(string field, string val = "") 
+    
+public List<cmlData> Children(int index = -1) 
+public List<cmlData> AllChildNodes(int index = -1) 
+public List<int> Childreni(int index = -1) 
+public List<int> AllChildNodesi(int index = -1) 
+public List<cmlData> AllDataOfType(string type_name, int starting_index = 0, string stop_at_data_type = "")
+public List<int> AllDataOfTypei(string type_name, int starting_index = 0, string stop_at_data_type = "")
+
+CML Properties
+-----------------------
+public float CMLVersion
+public cmlData this [int index] 
+public int Count 
+public float DocumentCMLVersion

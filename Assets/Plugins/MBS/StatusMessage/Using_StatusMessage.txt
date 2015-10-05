@@ -1,0 +1,27 @@
+How to use StatusMessage
+========================
+The purpose of this class is to show errors and warnings on screen. It is mostly hardcoded
+to allow for the look to remain constant.
+
+To use, just start using it and it will automatically create a gameobject for itself and
+make sure there is only one instance of the script in the game. If you are making a mobile game
+and do not want to add an extra OnGUI call to your project, simply comment out the OnGUI function
+and call StatusMessage.Instance.Draw() inside your existing OnGUI functions. Make sure to call
+it as the last line of code in your OnGUI function so it appears on top of anything else you might
+have on screen.
+
+If you place the script on a game object directly, you can also specify the GUISkin to use but
+I recommend placing it on an empty GameObject as the object it is placed on will not be destroyed
+as you change sceens.
+
+To show a message on screen, simply set the message like so:
+	StatusMessage.Message = "Some message to show";
+	
+The message will be added on top of any existing message(s) and will display for 3 seconds.
+
+It really is THAT simple.
+
+Example use: See StatusMessageTest.cs
+
+-- PROPERTIES -------------------------------------------- 
+static public string Message;

@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: projectionShard
+  m_Shader: {fileID: 4800000, guid: b1f6a9b989cf04c4085acd2a40c8066b, type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 5
+  m_CustomRenderQueue: -1
+  m_SavedProperties:
+    serializedVersion: 2
+    m_TexEnvs:
+      data:
+        first:
+          name: _MainTex
+        second:
+          m_Texture: {fileID: 2800000, guid: f870b2ed48eef3e46863218c8b4e0335, type: 3}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+    m_Floats:
+      data:
+        first:
+          name: _InvFade
+        second: 1
+    m_Colors:
+      data:
+        first:
+          name: _Color
+        second: {r: .0428826138, g: .0479205735, b: .052238822, a: .137254909}
+      data:
+        first:
+          name: _TintColor
+        second: {r: .121686324, g: .15285629, b: .171641767, a: .372549027}
+--- !u!1002 &2100001
+EditorExtensionImpl:
+  serializedVersion: 6

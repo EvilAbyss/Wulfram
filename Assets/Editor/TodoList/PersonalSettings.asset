@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9cf5f7105939831488a9a1473e112f2b, type: 3}
+  m_Name: PersonalSettings
+  m_EditorClassIdentifier: 
+  SelectedStatus: 01010101010101010101010101
+  SelectedCategories: 01010101
+  SelectedDevelopers: 0101
+  SelectedPriority: 01010101
+  SelectedSprints: 01
+  FieldSizes: 8b030000780000002d00000000000000000000000000000000000000780000000000000000000000
+  DisplayMode: 1
+  ShowBacklogTasks: 1
+  ShowSprintTasks: 

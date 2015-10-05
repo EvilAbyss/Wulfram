@@ -1,0 +1,73 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: mtl_lava_simple
+  m_Shader: {fileID: 4800000, guid: bec21333d7f8cf84cb75cab616acf589, type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 5
+  m_CustomRenderQueue: -1
+  m_SavedProperties:
+    serializedVersion: 2
+    m_TexEnvs:
+      data:
+        first:
+          name: _MainTex
+        second:
+          m_Texture: {fileID: 2800000, guid: 348fa4d278c53ad4dacd07df1e63a248, type: 3}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _Distort
+        second:
+          m_Texture: {fileID: 2800000, guid: f9a73fa499a3f48499ece92e4e81aa05, type: 3}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _LavaTex
+        second:
+          m_Texture: {fileID: 2800000, guid: 93a726948508cc14eab67fb1abe2daa8, type: 3}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: .467648119, y: 0}
+      data:
+        first:
+          name: _MainTex2
+        second:
+          m_Texture: {fileID: 2800000, guid: bef54341b6d21864c82d47f3bed4c7db, type: 3}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: .289630175, y: 0}
+      data:
+        first:
+          name: _MainTex_Add
+        second:
+          m_Texture: {fileID: 2800000, guid: 1a5d8cd24a805cd44b00c7f1e1e4d287, type: 3}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 1.56916785, y: 0}
+    m_Floats:
+      data:
+        first:
+          name: _Displacement
+        second: .0375000015
+      data:
+        first:
+          name: _RefractTexTiling
+        second: 1
+    m_Colors:
+      data:
+        first:
+          name: _Color
+        second: {r: 1, g: 1, b: 1, a: .0705882385}
+      data:
+        first:
+          name: _SpeedStrength
+        second: {r: 1, g: 1, b: 1, a: 1}
+      data:
+        first:
+          name: _ChannelFactor
+        second: {r: -.3281326, g: .592094123, b: .736038387, a: 0}

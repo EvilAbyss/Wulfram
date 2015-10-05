@@ -1,0 +1,885 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &100000
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 400000}
+  - 114: {fileID: 11400000}
+  - 82: {fileID: 8200000}
+  m_Layer: 17
+  m_Name: SargeManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1002 &100001
+EditorExtensionImpl:
+  serializedVersion: 6
+--- !u!1 &100002
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 400002}
+  - 33: {fileID: 3300000}
+  - 65: {fileID: 6500000}
+  - 23: {fileID: 2300000}
+  - 114: {fileID: 11400008}
+  m_Layer: 17
+  m_Name: game_end
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1002 &100003
+EditorExtensionImpl:
+  serializedVersion: 6
+--- !u!1 &100004
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 400004}
+  - 33: {fileID: 3300002}
+  - 65: {fileID: 6500002}
+  - 23: {fileID: 2300002}
+  - 114: {fileID: 11400004}
+  m_Layer: 17
+  m_Name: metal_doors
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1002 &100005
+EditorExtensionImpl:
+  serializedVersion: 6
+--- !u!1 &100006
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 400006}
+  - 33: {fileID: 3300004}
+  - 65: {fileID: 6500004}
+  - 23: {fileID: 2300004}
+  - 114: {fileID: 11400006}
+  m_Layer: 17
+  m_Name: training_alert
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1002 &100007
+EditorExtensionImpl:
+  serializedVersion: 6
+--- !u!1 &100010
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 400010}
+  - 33: {fileID: 3300008}
+  - 65: {fileID: 6500008}
+  - 23: {fileID: 2300008}
+  - 114: {fileID: 11400010}
+  m_Layer: 17
+  m_Name: turrets
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1002 &100011
+EditorExtensionImpl:
+  serializedVersion: 6
+--- !u!4 &400000
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 400002}
+  - {fileID: 400010}
+  - {fileID: 400006}
+  - {fileID: 400004}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+--- !u!1002 &400001
+EditorExtensionImpl:
+  serializedVersion: 6
+--- !u!4 &400002
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100002}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -25.5124397, y: -1.03086901, z: 45.295948}
+  m_LocalScale: {x: 6.70434427, y: 5.28594971, z: 4.86827803}
+  m_Children: []
+  m_Father: {fileID: 400000}
+  m_RootOrder: 0
+--- !u!1002 &400003
+EditorExtensionImpl:
+  serializedVersion: 6
+--- !u!4 &400004
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100004}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -49.570858, y: -1.2840519, z: 115.159508}
+  m_LocalScale: {x: 2.64292812, y: 5.09629774, z: 8.39722538}
+  m_Children: []
+  m_Father: {fileID: 400000}
+  m_RootOrder: 3
+--- !u!1002 &400005
+EditorExtensionImpl:
+  serializedVersion: 6
+--- !u!4 &400006
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100006}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -20.8522034, y: -1.2840519, z: 70.0349579}
+  m_LocalScale: {x: 22.3076, y: 5.09629774, z: 2.73134518}
+  m_Children: []
+  m_Father: {fileID: 400000}
+  m_RootOrder: 2
+--- !u!1002 &400007
+EditorExtensionImpl:
+  serializedVersion: 6
+--- !u!4 &400010
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100010}
+  m_LocalRotation: {x: 0, y: -.451117486, z: 0, w: .892464638}
+  m_LocalPosition: {x: -28.8499489, y: -1.2840519, z: 114.475685}
+  m_LocalScale: {x: 7.2006011, y: 5.09629774, z: 2.24451971}
+  m_Children: []
+  m_Father: {fileID: 400000}
+  m_RootOrder: 1
+--- !u!1002 &400011
+EditorExtensionImpl:
+  serializedVersion: 6
+--- !u!23 &2300000
+MeshRenderer:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100002}
+  m_Enabled: 0
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_Materials:
+  - {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 1
+  m_ReflectionProbeUsage: 1
+  m_ProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_ImportantGI: 0
+  m_AutoUVMaxDistance: .5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+--- !u!1002 &2300001
+EditorExtensionImpl:
+  serializedVersion: 6
+--- !u!23 &2300002
+MeshRenderer:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100004}
+  m_Enabled: 0
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_Materials:
+  - {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 1
+  m_ReflectionProbeUsage: 1
+  m_ProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_ImportantGI: 0
+  m_AutoUVMaxDistance: .5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+--- !u!1002 &2300003
+EditorExtensionImpl:
+  serializedVersion: 6
+--- !u!23 &2300004
+MeshRenderer:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100006}
+  m_Enabled: 0
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_Materials:
+  - {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 1
+  m_ReflectionProbeUsage: 1
+  m_ProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_ImportantGI: 0
+  m_AutoUVMaxDistance: .5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+--- !u!1002 &2300005
+EditorExtensionImpl:
+  serializedVersion: 6
+--- !u!23 &2300008
+MeshRenderer:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100010}
+  m_Enabled: 0
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_Materials:
+  - {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 1
+  m_ReflectionProbeUsage: 1
+  m_ProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_ImportantGI: 0
+  m_AutoUVMaxDistance: .5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+--- !u!1002 &2300009
+EditorExtensionImpl:
+  serializedVersion: 6
+--- !u!33 &3300000
+MeshFilter:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100002}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1002 &3300001
+EditorExtensionImpl:
+  serializedVersion: 6
+--- !u!33 &3300002
+MeshFilter:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100004}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1002 &3300003
+EditorExtensionImpl:
+  serializedVersion: 6
+--- !u!33 &3300004
+MeshFilter:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100006}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1002 &3300005
+EditorExtensionImpl:
+  serializedVersion: 6
+--- !u!33 &3300008
+MeshFilter:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100010}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1002 &3300009
+EditorExtensionImpl:
+  serializedVersion: 6
+--- !u!65 &6500000
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100002}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!1002 &6500001
+EditorExtensionImpl:
+  serializedVersion: 6
+--- !u!65 &6500002
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100004}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!1002 &6500003
+EditorExtensionImpl:
+  serializedVersion: 6
+--- !u!65 &6500004
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100006}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!1002 &6500005
+EditorExtensionImpl:
+  serializedVersion: 6
+--- !u!65 &6500008
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100010}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!1002 &6500009
+EditorExtensionImpl:
+  serializedVersion: 6
+--- !u!82 &8200000
+AudioSource:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 0
+  m_Volume: .62954545
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+--- !u!1002 &8200001
+EditorExtensionImpl:
+  serializedVersion: 6
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c1182676e061de4ab73e4eeee106d93, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sarge: {fileID: 2800000, guid: 2f86974e9d90d094f9b527df2af64d4d, type: 3}
+  background: {fileID: 2800000, guid: 42587452544c5479ba6f712bbc97126b, type: 3}
+  instructions:
+  - name: instructions
+    text: 
+    texture: {fileID: 2800000, guid: 479e24d97da849040a24cb7fa615125a, type: 3}
+    timeToDisplay: 4
+    audio: {fileID: 8300000, guid: 92e69d9ca8e444ffbaed925198572773, type: 3}
+    queuable: 1
+    overridable: 0
+    volume: 1
+  - name: good_morning
+    text: 'Good morning soldier, this is your platoon commander speaking. We are taking
+      you the advanced training course. You will be tested in many different ways
+      over the path. '
+    texture: {fileID: 0}
+    timeToDisplay: 11
+    audio: {fileID: 0}
+    queuable: 1
+    overridable: 0
+    volume: 1
+  - name: secret_base
+    text: Our secret base is just at the end of the track. Hope to see you there.
+    texture: {fileID: 0}
+    timeToDisplay: 6
+    audio: {fileID: 0}
+    queuable: 1
+    overridable: 0
+    volume: 1
+  - name: landing_zone
+    text: Corporal Reeves will show you the Landing Zone in the woods.
+    texture: {fileID: 0}
+    timeToDisplay: 5
+    audio: {fileID: 0}
+    queuable: 1
+    overridable: 0
+    volume: 1
+  - name: ground_instructions
+    text: Once you're on the ground, you'll receive some basic instructions. The rest
+      is up to you.
+    texture: {fileID: 0}
+    timeToDisplay: 7
+    audio: {fileID: 0}
+    queuable: 1
+    overridable: 0
+    volume: 1
+  - name: loading_zone
+    text: Hold on, you'll see a clearing when we get there.
+    texture: {fileID: 0}
+    timeToDisplay: 5
+    audio: {fileID: 0}
+    queuable: 1
+    overridable: 0
+    volume: 1
+  - name: wait_zone
+    text: Wait for my command private.
+    texture: {fileID: 0}
+    timeToDisplay: 3
+    audio: {fileID: 8300000, guid: fa14a4fdd73a048c28ffe521ea716e3f, type: 3}
+    queuable: 1
+    overridable: 0
+    volume: 1
+  - name: ropes
+    text: Ropes! Ropes! Move! Move!
+    texture: {fileID: 0}
+    timeToDisplay: 4
+    audio: {fileID: 8300000, guid: 150cc652d0115443ba53f378b7312e2a, type: 3}
+    queuable: 1
+    overridable: 0
+    volume: 1
+  - name: additional_instructions
+    text: Hold shift to run, and for crouch press Ctrl or Cmd once.
+    texture: {fileID: 0}
+    timeToDisplay: 7
+    audio: {fileID: 8300000, guid: f39fc9f0e830844c0bff8985f98d8421, type: 3}
+    queuable: 1
+    overridable: 0
+    volume: 1
+  - name: mfda_facilities
+    text: Our training course is based in the old MFDA facilities.
+    texture: {fileID: 0}
+    timeToDisplay: 3.70000005
+    audio: {fileID: 8300000, guid: a1ffce88aa3dc4823b7f88c5525228ad, type: 3}
+    queuable: 1
+    overridable: 0
+    volume: .200000003
+  - name: preparing_bots
+    text: Stand fast private. We are just preparing the training bots. Hold on a second.
+    texture: {fileID: 0}
+    timeToDisplay: 10
+    audio: {fileID: 8300000, guid: dbba7abc01a7341438318b0821da9667, type: 3}
+    queuable: 1
+    overridable: 0
+    volume: 1
+  - name: training_bots_done
+    text: Done! Head to the hallway.
+    texture: {fileID: 0}
+    timeToDisplay: 4
+    audio: {fileID: 0}
+    queuable: 1
+    overridable: 0
+    volume: 1
+  - name: training_alert
+    text: Careful now private. These training bots are serious business. Make sure
+      you get under cover before you start shooting.
+    texture: {fileID: 0}
+    timeToDisplay: 7
+    audio: {fileID: 8300000, guid: 85152b4252e1f43fbaf5653903340141, type: 3}
+    queuable: 1
+    overridable: 0
+    volume: 1
+  - name: vehicle_warning
+    text: There is vehicle transportation not far from here. Try to find it inside
+      this complex.
+    texture: {fileID: 0}
+    timeToDisplay: 6
+    audio: {fileID: 0}
+    queuable: 1
+    overridable: 0
+    volume: 1
+  - name: turrets
+    text: Ok private, these turrets are mean business. Make sure you select the correct
+      ammunition to use against them.
+    texture: {fileID: 0}
+    timeToDisplay: 7
+    audio: {fileID: 8300000, guid: 2bb453c5d304d4bc5adcb3ea3fa45e7f, type: 3}
+    queuable: 1
+    overridable: 0
+    volume: 1
+  - name: metal_doors
+    text: Listen now private, some of this doors look pretty thick. Howerver if you
+      do select your under flank grenade launcher, you should be able to punch through.
+    texture: {fileID: 0}
+    timeToDisplay: 10
+    audio: {fileID: 8300000, guid: 697a5d730be774a628a05a20ddb03592, type: 3}
+    queuable: 1
+    overridable: 0
+    volume: 1
+  - name: gate_time
+    text: This gate is time controlled, wait for my command.
+    texture: {fileID: 0}
+    timeToDisplay: 5
+    audio: {fileID: 0}
+    queuable: 1
+    overridable: 0
+    volume: 1
+  - name: gate_open
+    text: "Gate is open, get in the vehicle using \u201CE\u201D and move on!"
+    texture: {fileID: 0}
+    timeToDisplay: 5
+    audio: {fileID: 0}
+    queuable: 1
+    overridable: 0
+    volume: 1
+  - name: driving_skills
+    text: Time to test your driving skills, avoid obstacles. We are waiting for you
+      inside the base.
+    texture: {fileID: 0}
+    timeToDisplay: 7
+    audio: {fileID: 0}
+    queuable: 1
+    overridable: 0
+    volume: 1
+  - name: good_work
+    text: Brilliant impressive stuff private. Your training is now complete. Why don`t
+      you just hang around or meet the rest of the team.
+    texture: {fileID: 0}
+    timeToDisplay: 10
+    audio: {fileID: 8300000, guid: f74e2cf98cac241a7b1ef2edb5c23334, type: 3}
+    queuable: 1
+    overridable: 0
+    volume: 1
+  - name: unit
+    text: Nice to see you in our unit!
+    texture: {fileID: 0}
+    timeToDisplay: 4
+    audio: {fileID: 0}
+    queuable: 1
+    overridable: 0
+    volume: 1
+  - name: instructions2
+    text: 
+    texture: {fileID: 2800000, guid: 479e24d97da849040a24cb7fa615125a, type: 3}
+    timeToDisplay: 3
+    audio: {fileID: 8300000, guid: 5a928b221446643bda72eb363f185ffb, type: 3}
+    queuable: 1
+    overridable: 0
+    volume: 1
+  - name: instructions3
+    text: 
+    texture: {fileID: 2800000, guid: 479e24d97da849040a24cb7fa615125a, type: 3}
+    timeToDisplay: 4
+    audio: {fileID: 8300000, guid: 2196e338b2db64addaea44d5d7d55a03, type: 3}
+    queuable: 1
+    overridable: 0
+    volume: 1
+  - name: helicopter_base
+    text: You then fast ropes onto the ground. Once there you'll receive some basic
+      instructions. Then the rest is up to you.
+    texture: {fileID: 0}
+    timeToDisplay: 7
+    audio: {fileID: 8300000, guid: 4d547405d2ba44563a8fe7c7372d0b81, type: 3}
+    queuable: 1
+    overridable: 0
+    volume: 1
+  - name: instructions4
+    text: 
+    texture: {fileID: 2800000, guid: 479e24d97da849040a24cb7fa615125a, type: 3}
+    timeToDisplay: 3
+    audio: {fileID: 8300000, guid: c4b7204cb223042ffbedf9538dc05ab5, type: 3}
+    queuable: 1
+    overridable: 0
+    volume: 1
+  - name: instructions5
+    text: 
+    texture: {fileID: 2800000, guid: 479e24d97da849040a24cb7fa615125a, type: 3}
+    timeToDisplay: 13
+    audio: {fileID: 8300000, guid: 237ba1f6f8018422d9f3e8372fd78a5b, type: 3}
+    queuable: 1
+    overridable: 0
+    volume: 1
+  - name: game_end
+    text: Thanks for playing Unity Bootcamp. Now you've finished the first part of
+      your training. Play the full game on the Unity website.
+    texture: {fileID: 0}
+    timeToDisplay: 24
+    audio: {fileID: 8300000, guid: 9bb5bf65f3afc27498650af99d7371a3, type: 3}
+    queuable: 1
+    overridable: 0
+    volume: 1
+  - name: chimney
+    text: Follow the chimney to find the training course.
+    texture: {fileID: 0}
+    timeToDisplay: 8
+    audio: {fileID: 8300000, guid: fff66df90f44f1f41a38712ab0574976, type: 3}
+    queuable: 1
+    overridable: 0
+    volume: 1
+  - name: friendly_fire1
+    text: Do not shot your teammates.
+    texture: {fileID: 0}
+    timeToDisplay: 4
+    audio: {fileID: 8300000, guid: ab58f71a4865239429b1e953102ea5a1, type: 3}
+    queuable: 0
+    overridable: 0
+    volume: 1
+  - name: friendly_fire2
+    text: Be advised private, friendly fire will not be tolerated.
+    texture: {fileID: 0}
+    timeToDisplay: 6
+    audio: {fileID: 8300000, guid: 5c473c94b41aad84ea0bba75774ef6e5, type: 3}
+    queuable: 0
+    overridable: 0
+    volume: 1
+  fadeTime: .200000003
+  textStyle:
+    m_Name: 
+    m_Normal:
+      m_Background: {fileID: 0}
+      m_TextColor: {r: .615686297, g: .619607866, b: .592156887, a: 1}
+    m_Hover:
+      m_Background: {fileID: 0}
+      m_TextColor: {r: 1, g: 1, b: 1, a: 1}
+    m_Active:
+      m_Background: {fileID: 0}
+      m_TextColor: {r: 1, g: 1, b: 1, a: 1}
+    m_Focused:
+      m_Background: {fileID: 0}
+      m_TextColor: {r: 1, g: 1, b: 1, a: 1}
+    m_OnNormal:
+      m_Background: {fileID: 0}
+      m_TextColor: {r: 1, g: 1, b: 1, a: 1}
+    m_OnHover:
+      m_Background: {fileID: 0}
+      m_TextColor: {r: 1, g: 1, b: 1, a: 1}
+    m_OnActive:
+      m_Background: {fileID: 0}
+      m_TextColor: {r: 1, g: 1, b: 1, a: 1}
+    m_OnFocused:
+      m_Background: {fileID: 0}
+      m_TextColor: {r: 1, g: 1, b: 1, a: 1}
+    m_Border:
+      m_Left: 0
+      m_Right: 0
+      m_Top: 0
+      m_Bottom: 0
+    m_Margin:
+      m_Left: 0
+      m_Right: 0
+      m_Top: 0
+      m_Bottom: 0
+    m_Padding:
+      m_Left: 0
+      m_Right: 0
+      m_Top: 0
+      m_Bottom: 0
+    m_Overflow:
+      m_Left: 0
+      m_Right: 0
+      m_Top: 0
+      m_Bottom: 0
+    m_Font: {fileID: 12800000, guid: 785f8151d0c5be24f872da5db2e9499d, type: 3}
+    m_FontSize: 0
+    m_FontStyle: 0
+    m_Alignment: 3
+    m_WordWrap: 1
+    m_RichText: 1
+    m_TextClipping: 1
+    m_ImagePosition: 0
+    m_ContentOffset: {x: 0, y: 0}
+    m_FixedWidth: 0
+    m_FixedHeight: 0
+    m_StretchWidth: 1
+    m_StretchHeight: 0
+  debug: 0
+  tex: {fileID: 0}
+--- !u!1002 &11400001
+EditorExtensionImpl:
+  serializedVersion: 6
+--- !u!114 &11400004
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100004}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd1b53d03af244e7ba371f69277ac178, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  instructions:
+  - instructionName: metal_doors
+    instructionDelay: 0
+    playing: 0
+--- !u!1002 &11400005
+EditorExtensionImpl:
+  serializedVersion: 6
+--- !u!114 &11400006
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100006}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd1b53d03af244e7ba371f69277ac178, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  instructions:
+  - instructionName: training_alert
+    instructionDelay: 0
+    playing: 0
+--- !u!1002 &11400007
+EditorExtensionImpl:
+  serializedVersion: 6
+--- !u!114 &11400008
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100002}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd1b53d03af244e7ba371f69277ac178, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  instructions:
+  - instructionName: game_end
+    instructionDelay: 0
+    playing: 0
+--- !u!1002 &11400009
+EditorExtensionImpl:
+  serializedVersion: 6
+--- !u!114 &11400010
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100010}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd1b53d03af244e7ba371f69277ac178, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  instructions:
+  - instructionName: turrets
+    instructionDelay: 0
+    playing: 0
+--- !u!1002 &11400011
+EditorExtensionImpl:
+  serializedVersion: 6
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 100000}
+  m_IsPrefabParent: 1
+--- !u!1002 &100100001
+EditorExtensionImpl:
+  serializedVersion: 6

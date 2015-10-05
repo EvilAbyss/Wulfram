@@ -1,0 +1,144 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 57ba9232cb83fd84785f5320d041dbc3, type: 3}
+  m_Name: TodoList
+  m_EditorClassIdentifier: 
+  TaskList:
+  - Order: 1
+    Description: Fix Pulse
+    Developer: Unassigned
+    Category: Unassigned
+    DueDate: 0
+    DueTime: 0
+    IsMatchingSearchString: 1
+    IsMatchingVisibilityOptions: 0
+    TimeCreated: 1413310020
+    TimeCompleted: 1413310020
+    Tags: 
+    Status: Completed
+    Priority: 
+    Effort: 1
+    SprintIndex: -1
+    Progress: .159420297
+    Posts:
+    - Date: 1413310020
+      TransitionTo: Completed
+      AssignTo: 
+      Text: 
+      From: 
+    isDone: 1
+    PreCompleteStatus: Task not started
+  - Order: 2
+    Description: Fix Pulse
+    Developer: Unassigned
+    Category: Unassigned
+    DueDate: 0
+    DueTime: 0
+    IsMatchingSearchString: 1
+    IsMatchingVisibilityOptions: 1
+    TimeCreated: 1413310080
+    TimeCompleted: 0
+    Tags: 
+    Status: Task not started
+    Priority: 
+    Effort: 3
+    SprintIndex: -1
+    Progress: .98550725
+    Posts: []
+    isDone: 0
+    PreCompleteStatus: 
+  Developers:
+  - Oliver
+  Categories:
+  - Features
+  - Bugs
+  - Wishlist
+  Workflow:
+  - Description: Task not started
+    Type: 1
+    Transitions:
+    - To: In Production
+    - To: Cancelled
+    - To: Completed
+  - Description: In Production
+    Type: 0
+    Transitions:
+    - To: Waiting for Feedback
+    - To: Waiting for Sign of
+    - To: Cancelled
+    - To: Completed
+  - Description: Waiting for Feedback
+    Type: 0
+    Transitions:
+    - To: Rejected
+    - To: In Production
+    - To: Waiting for Sign of
+    - To: Cancelled
+    - To: Completed
+  - Description: Waiting for Sign of
+    Type: 0
+    Transitions:
+    - To: Rejected
+    - To: Completed
+  - Description: Rejected
+    Type: 0
+    Transitions:
+    - To: In Production
+    - To: Cancelled
+    - To: Completed
+  - Description: Cancelled
+    Type: 4
+    Transitions:
+    - To: Task not started
+    - To: In Production
+  - Description: Bug claimed
+    Type: 2
+    Transitions:
+    - To: Reproducable
+    - To: Confirmed
+    - To: Claimed fixed
+    - To: Known shipable
+  - Description: Reproducable
+    Type: 0
+    Transitions:
+    - To: Claimed fixed
+    - To: Known shipable
+  - Description: Confirmed
+    Type: 0
+    Transitions:
+    - To: Claimed fixed
+    - To: Known shipable
+  - Description: Claimed fixed
+    Type: 0
+    Transitions:
+    - To: Fix rejected
+    - To: Completed
+  - Description: Fix rejected
+    Type: 0
+    Transitions:
+    - To: Reproducable
+    - To: Confirmed
+    - To: Claimed fixed
+    - To: Known shipable
+  - Description: Known shipable
+    Type: 4
+    Transitions:
+    - To: Claimed fixed
+  - Description: Completed
+    Type: 3
+    Transitions: []
+  TodoListVersion: 1.29999995
+  Priority:
+  - High
+  - Normal
+  - Low
+  BacklogItemEffortOptions: 4
+  Sprints: []

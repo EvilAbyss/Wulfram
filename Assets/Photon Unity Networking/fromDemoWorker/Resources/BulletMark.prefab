@@ -1,0 +1,140 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &100000
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 400000}
+  - 114: {fileID: 11400000}
+  - 114: {fileID: 11400004}
+  - 114: {fileID: 11400002}
+  m_Layer: 0
+  m_Name: BulletMark
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1002 &100001
+EditorExtensionImpl:
+  serializedVersion: 6
+--- !u!4 &400000
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_LocalRotation: {x: 0, y: .0568084978, z: 0, w: -.998385131}
+  m_LocalPosition: {x: -34.4505692, y: -.157134652, z: 64.7082672}
+  m_LocalScale: {x: .150000006, y: .150000006, z: .100000001}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+--- !u!1002 &400001
+EditorExtensionImpl:
+  serializedVersion: 6
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed894912f34094b75b141efee18dd328, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  affectedObjects: []
+  maxAngle: 90
+  bounds:
+    m_Center: {x: 0, y: 0, z: 0}
+    m_Extent: {x: 0, y: 0, z: 0}
+  previousUVAngle: 0
+  previousPosition: {x: -34.4505692, y: -.157134652, z: 64.7082672}
+  previousRotation: {x: 0, y: .0568084978, z: 0, w: -.998385131}
+  previousScale: {x: .150000006, y: .150000006, z: .100000001}
+  previousMaxAngle: 90
+  previousPushDistance: .00200000009
+  previousTiling: {x: 1, y: 1}
+  previousOffset: {x: 0, y: 0}
+  useMeshCollider: 0
+  tiling: {x: 1, y: 1}
+  offset: {x: 0, y: 0}
+  uvAngle: 0
+  decalMaterial: {fileID: 2100000, guid: 9a9f84f43f18f4fb5adc4371dbcfd2bf, type: 2}
+  decalMode: 1
+  bottomPlane: {x: -0, y: 1.1920929e-07, z: -1.00000012, w: -1.7920754}
+  topPlane: {x: 0, y: -1.1920929e-07, z: 1.00000012, w: 1.94207537}
+  leftPlane: {x: -.113433294, y: -.993545771, z: -1.3522329e-08, w: -2.50439048}
+  rightPlane: {x: .113433294, y: .993545771, z: 1.3522329e-08, w: 2.65439034}
+  frontPlane: {x: -.993545711, y: .113433175, z: -1.18439864e-07, w: 2.06228805}
+  backPlane: {x: .993545711, y: -.113433175, z: 1.18439864e-07, w: -1.96228814}
+  decalNormal: {x: -.993545711, y: .113433175, z: -1.18439864e-07}
+  decalCenter: {x: 1.70671177, y: -2.79100204, z: -1.86707544}
+  decalTangent: {x: -.113433294, y: -.993545771, z: -1.3522329e-08}
+  decalBinormal: {x: 0, y: -1.1920929e-07, z: 1.00000012}
+  decalSize: {x: .149999976, y: .149999976, z: .0999999791}
+  pushDistance: .00200000009
+  checkAutomatically: 0
+  affectedLayers:
+    serializedVersion: 2
+    m_Bits: 34816
+  affectOtherDecals: 0
+  affectInactiveRenderers: 0
+  showAffectedObjectsOptions: 0
+  showObjects: 0
+--- !u!1002 &11400001
+EditorExtensionImpl:
+  serializedVersion: 6
+--- !u!114 &11400002
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e16a2e15518f03249b0fb406b33212d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  HitFX: {fileID: 0}
+--- !u!1002 &11400003
+EditorExtensionImpl:
+  serializedVersion: 6
+--- !u!114 &11400004
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  subId: 0
+  ownerId: 0
+  group: 0
+  prefixBackup: -1
+  observed: {fileID: 400000}
+  synchronization: 3
+  onSerializeTransformOption: 3
+  onSerializeRigidBodyOption: 2
+  instantiationId: -1
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 100000}
+  m_IsPrefabParent: 1
+--- !u!1002 &100100001
+EditorExtensionImpl:
+  serializedVersion: 6

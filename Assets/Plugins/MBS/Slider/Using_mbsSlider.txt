@@ -1,0 +1,59 @@
+How to use mbsSlider
+==========================
+
+This class uses mbsStateMachine.
+
+When I set out to create the mbsSlider class, my intention was to create a generic back end
+class that could be used to slide in any GUI element. As such, this class has no graphical
+front end and is used purely to represent a Rect at it's current location on screen so all you
+have to do in your GUI code is just draw to wherever it tells you to draw.
+
+It does also animate a fade in and out value and offers you 4 different directions to slide
+the rect in from and slide out to. These slide directions can be selected independently of
+each other.
+
+To use, simply add an mbsSlider public value to a script and then configure in the inspector.
+
+The fields to configure are:
+    - Target Pos: Where the Rect should end up after animating open
+    - Fade: Should the window fade in gradually or simply appear and disappear?
+    - Slide: Should the window slide in or should it just appear and disappear?
+    - Slide In Direction and Slide Out Direction: As explained above
+    - Slide Speed: How fast will this panel animate?
+    
+Make sure the Slide Speed value is not 0 or else nothing will happen. After configuring these
+values in the inspector, you are ready to go to the code.
+
+First thing you need to do is initialise the underlaying mbsStateMachine by calling Init() in Start.
+Next, call your variable's Update() function inside of Update(). This is where the actual work takes place.
+
+That is it. You will now have a Pos variable that you can fetch to indicate where your content should draw.
+
+Additionally, the mbsSlider class also has delegate functions that get called when an animation starts,
+or stops when sliding in or out. They are entirely optional to use but tend to be rather handy.
+
+Example use: See mbsSlideTest.cs
+
+    -- FUNCTION LIST -----------------------------------------
+
+    void Init()                      Initialise the mbsStateMachine
+    void Activate()                  Slide in
+    void Deactivate()                Slide out
+    void Update ()                   Calculate the current position
+    void FadeGUI(bool fade=true)     Change GUI.alpha according to current slide position
+
+    -- PROPERTIES -------------------------------------------- 
+    Rect                             Pos                    
+    float                            alpha                 
+    bool                             Fade                
+    bool                             Slide            
+    mbsStateMachine<eSlideState>     slideState            
+    eSlideDirection                  slideInDirection
+    eSlideDirection                  slideOutDirection
+    float                            slideSpeed         
+
+    -- CALL BACKS -------------------------------------------- 
+    FunctionCall                     OnActivating;
+    FunctionCall                     OnActivated;
+    FunctionCall                     OnDeactivated;
+    FunctionCall                     OnDeactivating;

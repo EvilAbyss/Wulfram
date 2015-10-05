@@ -1,0 +1,33 @@
+How to use GUIX
+==========================
+
+GUIX is a static class and does not need to be placed on a game object in your scene.
+Just have it in your project and you are ready to use it.
+
+It really cannot be easier to use! By default it will use the iPad retina's display size
+but if you want to default to something else, simply call SetScreenSize once in any script
+and all scripts will use the new resolution from there on in.
+
+To use, simply call GUIX.FixScreenSize() with no paramters inside your OnGUI function.
+That's it. That is all you have to do. If for some or other reason you want to get back to
+the actual screen size, simply call GUIX.ResetDisplay() with no parameters. Done.
+
+It really can't be easier.
+
+The only thing to remember is that you MUST set the resolution to a size that Unity supports.
+i.e. GUIX.SetScreenSize(960,640) is valid...
+	 GUIX.SetScreenSize(212, 493) is not....
+
+See GUIXTest.cs for a practical example.
+
+
+GUIX Function List
+------------------
+static public void SetScreenSize(float width = 2048f, float height = 1536f)
+static public void FixScreenSize()
+static public void ResetDisplay()
+
+GUIX Property List
+------------------
+static public float screenWidth		= 2048f,
+static public float screenHeight	= 1536f;
