@@ -50,6 +50,7 @@ public class FireProjectile : ProjectileBase {
 				if( ship.PhotonView.isMine == false )
 				{
 				ship.SendRespawn();
+				Debug.Log("Respawned Player");
 					return;
 				}
 				
