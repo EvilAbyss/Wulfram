@@ -44,13 +44,18 @@ public class FireProjectile : ProjectileBase {
 			}
 			else if( collision.collider.tag == "Ship")
 			{
-				
-				Ship ship = collision.collider.GetComponent<Ship>();
 
+				Ship ship = collision.collider.GetComponent<Ship>();
+			Health h = collision.collider.GetComponent<Health>();
 				if( ship.PhotonView.isMine == false )
 				{
-				ship.SendRespawn();
-				Debug.Log("Respawned Player");
+				if(h != null) {
+					h.TakeDamage( damage );
+					Debug.Log( "Damage" );
+				}
+
+				//ship.SendRespawn();
+				//Debug.Log("Respawned Player");
 					return;
 				}
 				

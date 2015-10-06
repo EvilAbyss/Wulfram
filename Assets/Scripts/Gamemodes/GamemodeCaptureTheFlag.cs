@@ -9,13 +9,13 @@ public class GamemodeCaptureTheFlag : GamemodeBase
 	/// <summary>
 	/// How long is one match?
 	/// </summary>
-	public const float TotalRoundTime = 5 * 60;
+	public const float TotalRoundTime = 25 * 60;
 
 
 	/// <summary>
 	/// How many captures are needed till one team wins?
 	/// </summary>
-	public const int TotalFlagCaptures = 5;
+	public const int TotalFlagCaptures = 10;
 
 	/// <summary>
 	/// The spawn point for the red team

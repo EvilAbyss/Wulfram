@@ -3,7 +3,7 @@ using System.Collections;
 
 public class health : MonoBehaviour {
 
-	public float hitPoints = 100f;
+	public float hitPoints = 1000f;
 	float currentHitPoints;
 	
 	// Use this for initialization
@@ -20,13 +20,13 @@ public class health : MonoBehaviour {
 		}
 	}
 	
-	/*void OnGUI() {
-		if( GetComponent<PhotonView>().isMine && gameObject.tag == "Player" ) {
+	void OnGUI() {
+		if( GetComponent<PhotonView>().isMine && gameObject.tag == "Ship" ) {
 			if( GUI.Button(new Rect (Screen.width-100, 0, 100, 40), "Suicide!") ) {
 				Die ();
 			}
 		}
-	}*/
+	}
 	
 	void Die() {
 		if( GetComponent<PhotonView>().instantiationId==0 ) {
@@ -34,7 +34,7 @@ public class health : MonoBehaviour {
 		}
 		else {
 			if( GetComponent<PhotonView>().isMine ) {
-				if( gameObject.tag == "Player" ) {		// This is my actual PLAYER object, then initiate the respawn process
+				if( gameObject.tag == "Ship" ) {		// This is my actual PLAYER object, then initiate the respawn process
 		//test
 				}
 				

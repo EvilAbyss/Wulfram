@@ -990,7 +990,29 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 473201684}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1001 &481249891
+--- !u!4 &519748963 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 400000, guid: c43ddf1c16e6afd4fa4c0b6412a875c2, type: 2}
+  m_PrefabInternal: {fileID: 817470714}
+--- !u!4 &526521423 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 400018, guid: ca5e2ff2b0c62914798e851c5b33ca3b, type: 2}
+  m_PrefabInternal: {fileID: 578621097}
+--- !u!4 &531622177 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 400000, guid: 9dabab22e58779541b670a4a20394fb8, type: 2}
+  m_PrefabInternal: {fileID: 141522211}
+--- !u!114 &531622178 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 11400002, guid: 9dabab22e58779541b670a4a20394fb8,
+    type: 2}
+  m_PrefabInternal: {fileID: 141522211}
+  m_Script: {fileID: 11500000, guid: 24efbea2fe79cad46896f68c80fd7711, type: 3}
+--- !u!4 &536689432 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 400000, guid: 7d92521a5a9e4e0428dfd39e9a2fa6be, type: 2}
+  m_PrefabInternal: {fileID: 1543964256}
+--- !u!1001 &541975885
 Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -1044,28 +1066,6 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3cb0239ecc3363c40928e5afcdef257e, type: 2}
   m_IsPrefabParent: 0
---- !u!4 &519748963 stripped
-Transform:
-  m_PrefabParentObject: {fileID: 400000, guid: c43ddf1c16e6afd4fa4c0b6412a875c2, type: 2}
-  m_PrefabInternal: {fileID: 817470714}
---- !u!4 &526521423 stripped
-Transform:
-  m_PrefabParentObject: {fileID: 400018, guid: ca5e2ff2b0c62914798e851c5b33ca3b, type: 2}
-  m_PrefabInternal: {fileID: 578621097}
---- !u!4 &531622177 stripped
-Transform:
-  m_PrefabParentObject: {fileID: 400000, guid: 9dabab22e58779541b670a4a20394fb8, type: 2}
-  m_PrefabInternal: {fileID: 141522211}
---- !u!114 &531622178 stripped
-MonoBehaviour:
-  m_PrefabParentObject: {fileID: 11400002, guid: 9dabab22e58779541b670a4a20394fb8,
-    type: 2}
-  m_PrefabInternal: {fileID: 141522211}
-  m_Script: {fileID: 11500000, guid: 24efbea2fe79cad46896f68c80fd7711, type: 3}
---- !u!4 &536689432 stripped
-Transform:
-  m_PrefabParentObject: {fileID: 400000, guid: 7d92521a5a9e4e0428dfd39e9a2fa6be, type: 2}
-  m_PrefabInternal: {fileID: 1543964256}
 --- !u!1001 &578621097
 Prefab:
   m_ObjectHideFlags: 0
@@ -1207,7 +1207,7 @@ AudioListener:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 599990705}
-  m_Enabled: 1
+  m_Enabled: 0
 --- !u!92 &599990707
 Behaviour:
   m_ObjectHideFlags: 0

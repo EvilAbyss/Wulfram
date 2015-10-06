@@ -424,7 +424,7 @@ MonoBehaviour:
   BoostSpeed: 25
   BreakSpeed: 10
   Acceleration: 4
-  Deceleration: 10
+  Deceleration: 10.1499996
   PitchAcceleration: 4
   PitchMaximumAngle: 50
   PitchLoopingAcceleration: 9
@@ -4810,7 +4810,11 @@ Prefab:
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
-    m_Modifications: []
+    m_Modifications:
+    - target: {fileID: 0}
+      propertyPath: Deceleration
+      value: 10.1499996
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 100000}
