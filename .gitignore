@@ -16,6 +16,7 @@
 *.pidb
 *.booproj
 !wulfram3.exe
+!Releases.rar
 # Unity3D generated meta files
 *.pidb.meta
 
