@@ -26,6 +26,7 @@ TagManager:
   - glass
   - Projectile
   - Projectile3
+  - NameTagCamera
   layers:
   - Default
   - TransparentFX
