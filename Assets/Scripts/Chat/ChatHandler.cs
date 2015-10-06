@@ -74,10 +74,12 @@ public class ChatHandler : bl_Login, IChatClientListener
     /// </summary>
     public string ChatAppId;
 
+
     /// <summary>
     /// The chat username
-    /// </summary>
-    public string ChatUsername;
+    ///
+	
+	public string ChatUsername;
 
     #endregion
 
@@ -186,9 +188,21 @@ public class ChatHandler : bl_Login, IChatClientListener
     /// </summary>
     public void Connect()
     {
-		m_ChatClient.Connect( ChatAppId, "1.0", ChatUsername, null );
-	
-    }
+		//Debug.Log (m_User);
+		//Debug.Log ( "Finding Username: " + m_UserInput.text );
+		/// Debug.Log ( "Finding Username: " + m_UserInput);
+
+
+		if (ChatUsername.Contains ("Justin")) {
+			string AdminName = "<color=blue>[MOD]</color> Justin";
+			m_ChatClient.Connect (ChatAppId, "1.0", AdminName, null);
+			Debug.Log ("Admin Logged in");
+		} else {
+			m_ChatClient.Connect (ChatAppId, "1.0", ChatUsername, null);
+
+		}
+	}
+
 
     /// <summary>
     /// Once the player has connected to a room, we want to subscribe to specific

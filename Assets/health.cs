@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class health : MonoBehaviour {
+public class health : Photon.MonoBehaviour {
 
 	public float hitPoints = 1000f;
 	float currentHitPoints;
@@ -23,7 +23,9 @@ public class health : MonoBehaviour {
 	void OnGUI() {
 		if( GetComponent<PhotonView>().isMine && gameObject.tag == "Ship" ) {
 			if( GUI.Button(new Rect (Screen.width-100, 0, 100, 40), "Suicide!") ) {
-				Die ();
+
+			
+					Die ();
 			}
 		}
 	}
@@ -35,7 +37,7 @@ public class health : MonoBehaviour {
 		else {
 			if( GetComponent<PhotonView>().isMine ) {
 				if( gameObject.tag == "Ship" ) {		// This is my actual PLAYER object, then initiate the respawn process
-		//test
+					Ship.LocalPlayer.SendRespawn();
 				}
 				
 				PhotonNetwork.Destroy(gameObject);

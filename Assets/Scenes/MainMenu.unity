@@ -1154,6 +1154,7 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: .0219999999
+  m_StereoMirrorMode: 0
 --- !u!4 &462529965
 Transform:
   m_ObjectHideFlags: 0
@@ -2283,6 +2284,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a24fb0836761b9d4387bf37cda4c6678, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  LoginPHP_URL: 
+  NextLevel: 
+  m_User: 
+  m_Password: 
+  m_WulframUser: 
+  KeepMe: 0
+  mToggle: {fileID: 0}
+  m_UserInput: {fileID: 0}
+  m_PassInput: {fileID: 0}
   ChatAppId: 061d535c-e5cf-4934-bed6-8c7ed5259d8e
   ChatUsername: WulframPlayer
 --- !u!4 &1326397530
@@ -2475,6 +2485,7 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: .0219999999
+  m_StereoMirrorMode: 0
 --- !u!4 &1419023032
 Transform:
   m_ObjectHideFlags: 0

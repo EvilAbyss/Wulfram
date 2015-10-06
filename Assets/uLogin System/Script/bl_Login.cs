@@ -6,9 +6,11 @@ public class bl_Login : MonoBehaviour {
 
     public string LoginPHP_URL = "";
     public string NextLevel = "";
+
     [Space(5)]
     public string m_User = "";
     public string m_Password = "";
+	public string m_WulframUser = "";
     public bool KeepMe = false;
     [Space(5)]
     public Toggle mToggle = null;
@@ -52,6 +54,8 @@ public class bl_Login : MonoBehaviour {
         if (m_UserInput != null)
         {
             m_User = m_UserInput.text;
+			m_WulframUser = m_UserInput.text;
+
         }
         if (m_PassInput != null)
         {
